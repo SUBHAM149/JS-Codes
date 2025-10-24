@@ -1,0 +1,79 @@
+ES6 : ES stands for ECMAScript. ECMAScript is the standard that js follows. if JS is like a chef, then ECMAScript is a like a recipe book. Every a new features needs to be added to JS, a new version of ES will be released. ES6 released in 2015 also called ES2015. The latest version  is ES2024 or ES15
+ES6 actually brought lot of revolutionary features such as
+   i. let & const
+   ii. template literals
+   iii. Arrow Functions
+   iv. default parameters
+   v. Promises/Async Await
+   vi. OOP(Object Oriented Programming)
+   vii . destructuring Array/objects
+   viii. Rest of the parameters and spread operator
+   ix. ES6 Module System
+
+
+vi. OOP(Object Oriented Programming):
+it is a way of writing code
+Probelm :  Jack wants six pack
+solution1 : wake up early --> hit the gym --> do some exercises --> maintain diet ---> repeat for some year
+solution 2 : first build muscles --> build some biceps --> some chest --> do some abs
+solution 3: check what needs for six pack --> verify constantly what ypu have --> do what is needed
+
+The third approach explains Object Oriented Programming. it constantly focus on objects
+Object is a physical entity which have properties and methods
+class is a standard/blueprint of a object . it contains multiple objects so can be called as collection of objects
+class Fruit
+{
+   color;shape;name;taste;
+}
+apple is an object which is from class Fruit
+//To create object we use a keyword new -- to generate dynamic memory
+let apple = new Fruit();
+let banana = new Fruit()
+
+
+//Inheritance : when a class is derived from another class it is called inheritance
+
+class Car
+{
+    cmodel;mileage;price;
+    constructor(a,b,c){
+      this.cmodel =a;
+      this.mileage =b;
+      this.price =c;
+    }
+}
+let obj1 = new Car("tata punch","20kmph",6);
+console.log(obj1.mileage) 
+
+class ElectricCar extends Car{
+     batteryCapacity;
+     constructor(a,b,c,d){
+      super(a,b,c);
+      this.batteryCapacity = d;
+     }
+}
+let obj2 = new ElectricCar("tesla",20kmph,70,"10hr")
+
+
+destructuring of objects or arrays:
+     let arr = [5,4,6,9];
+     let [a,b,c,d] = arr;  // destructuring of array
+
+     let obj = { name :"shekhar",age:55}
+     let {name,age} = obj;  // destructuring of object
+
+Rest of the parameters:
+        it is represented by three dots and it is used to collect all the rest of parameters and store them as an array. it is always written at last of parameters
+        let [a,...b]= ["raj","shekhar","john"]
+    console.log(a)  //raj
+    console.log(b)  //["shekhar","john"]
+
+Spread operator:
+        it is used to spread out the array. it is also represented by three dots
+let a =[1,2],b=[3,4];
+let c = [...a,...b];
+console.log(c) [1,2,3,4];
+
+Modules :
+
+
