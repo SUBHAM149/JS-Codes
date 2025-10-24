@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myParas"></div>
+    <button onclick="addImage()">ADD PARA</button>
+    <script src="./script.js"></script>
+</body>
+</html>
+js--------------------------------
+function addPara ()
+{
+    const pa = document.createElement('p')
+    pa.textContent = "Hello World";
+    document.getElementById("myParas").appendChild(pa)
+}
+function addImage ()
+{
+    const i = document.createElement('img');
+    i.src =
+        "https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png";
+    i.height = "200";
+    i.width = "200";
+      document.getElementById("myParas").appendChild(i)
+}
