@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video style="height: 300px;width: 300px;" id="vd" autoplay></video>
+    <button id="btn">click me</button>
+    <script src="./script.js"></script>
+</body>
+</html>
+JS------------------
+document.getElementById('btn').addEventListener('click', async function ()
+{
+    // let x = window.open("https://www.google.com")
+    // setTimeout(()=>x.close(),5000)
+    // window.history.back()
+    // window.navigator.geolocation.getCurrentPosition((res) =>
+    // {
+    //     console.log(res.coords.latitude,res.coords.longitude)
+    // })
+    const res = await window.navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+    document.getElementById('vd').srcObject = res;
+    new MediaRecorder(res);
+    // text to speech
+    let msg = new SpeechSynthesisUtterance("hellooooooooooooooooooooooooooo")
+    speechSynthesis.speak(msg)
+})
+
+
