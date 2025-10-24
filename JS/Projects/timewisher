@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <p class=" fs-1 text-white text-center">
+        <span id="m"></span>: <span id="s"></span>
+    </p>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+js-------------------------------
+// const para = document.getElementById('show')
+// let c = 10;
+// setTimeout(() =>
+// {
+//     para.textContent = "welcome Everyone"
+//     timer();
+// }, 1000)
+// function timer ()
+// {
+//    let x = setInterval(() =>
+//     {
+//        para.textContent = c--;
+//        if (c == -1)
+//        {
+//            para.textContent = "Wish You All the Best"
+//            clearInterval(x)
+//        }
+//     },1000)
+// }
+let m = 4;
+let s = 0;
+const mEle = document.getElementById('m');
+const sEle = document.getElementById('s');
+mEle.textContent = m;
+sEle.textContent = s;
+s = 60;
+let x = setInterval(() =>
+{
+    s--; 
+    sEle.textContent = s;
+     if (s == 0&& m == 0) {
+				clearInterval(x)
+			}
+    if (s == 0)
+    {
+      
+        s = 60;
+        if(m!=0)
+        {
+              m--
+            mEle.textContent = m
+          }
+    }
+   
+},20)
