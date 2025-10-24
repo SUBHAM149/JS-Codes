@@ -1,0 +1,27 @@
+Basic Javascript
+==================
+    Introduction
+    Datatypes
+       numbers -- methods, math
+       string --- methods
+       boolean,undefined , null
+    operators
+    control statements(if, switch)
+    loops (while , do while, for, for of, for in)
+    functions
+    Arrays
+    Objects
+    
+DOM
+==================
+     DOM Introduction, Selection
+     DOM Manipulation,
+     DOM creation
+        Events
+        Form validation
+Advanced Javascript
+===================
+    callback hell,Promises,fetch, API, async await
+    libraries(jquery,axios), BOM, ES6 features
+
+
